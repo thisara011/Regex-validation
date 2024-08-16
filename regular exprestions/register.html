@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration</title>
+<script src="validation.js" defer></script> 
+</head>
+<body>
+ <h2>User Registration</h2>
+ <form id="registrationForm" onsubmit="return validateForm()">
+ <label for="name">Name:</label><br>
+ <input type="text" id="name" name="name"><br>
+ <span id="nameError" style="color: red;"></span><br>
+ <label for="username">Username:</label><br>
+ <input type="text" id="username" name="username"><br>
+ <span id="usernameError" style="color: red;"></span><br>
+ 
+ <label for="email">Email:</label><br>
+ <input type="email" id="email" name="email"><br>
+ <span id="emailError" style="color: red;"></span><br>
+ <label for="profilePicture">Profile Picture:</label><br>
+ <input type="file" id="profilePicture" name="profilePicture" accept=".jpg, .jpeg, .png, .gif"><br>
+ <span id="profilePictureError" style="color: red;"></span><br>
+ <label for="password">Password:</label><br>
+ <input type="password" id="password" name="password"><br>
+ <span id="passwordError" style="color: red;"></span><br>
+ <label for="gender">Gender:</label><br>
+ <select id="gender" name="gender">
+ <option value="">Select</option>
+ <option value="male">Male</option>
+ <option value="female">Female</option>
+ <option value="other">Other</option>
+ </select><br>
+ <span id="genderError" style="color: red;"></span><br>
+ <label for="mobileNumber">Mobile Number:</label><br>
+ <input type="tel" id="mobileNumber" name="mobileNumber"><br>
+ <span id="mobileNumberError" style="color: red;"></span><br>
+ <label for="dob">Date of Birth:</label><br>
+ <input type="date" id="dob" name="dob"><br>
+ <span id="dobError" style="color: red;"></span><br>
+ <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
